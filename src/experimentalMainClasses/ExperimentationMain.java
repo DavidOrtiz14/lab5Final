@@ -3,7 +3,9 @@ package experimentalMainClasses;
 import java.io.FileNotFoundException;
 
 import sorterClasses.BubbleSortSorter;
-
+import sorterClasses.CocktailSort;
+import sorterClasses.CombSorter;
+import sorterClasses.HeapSort;
 import sorterClasses.InsertionSortSorter;
 import sorterClasses.SelectionSortSorter;
 import experimentalClasses.ExperimentController;
@@ -37,7 +39,10 @@ public class ExperimentationMain {
 		ec.addStrategy(new StrategiesTimeCollection<Integer>(new BubbleSortSorter<Integer>()));
 		ec.addStrategy(new StrategiesTimeCollection<Integer>(new SelectionSortSorter<Integer>()));
 		ec.addStrategy(new StrategiesTimeCollection<Integer>(new InsertionSortSorter<Integer>()));
-	
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new CombSorter<Integer>()));
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new CocktailSort<Integer>()));
+		ec.addStrategy(new StrategiesTimeCollection<Integer>(new HeapSort<Integer>()));
+		
 		
 		/**/
 

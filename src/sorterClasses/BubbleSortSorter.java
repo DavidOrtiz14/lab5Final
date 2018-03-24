@@ -1,7 +1,5 @@
 package sorterClasses;
 
-import java.util.Comparator;
-
 import sortersTesterClasses.Entero;
 
 public class BubbleSortSorter<E> extends AbstractMaxValueSorter<E> {
